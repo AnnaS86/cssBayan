@@ -1,4 +1,60 @@
-.bayan {
-  max-width:
-  margin: 20px auto;
+body {
+  display: flex;
+  flex-direction: column;
 }
+.main-header {
+  font-size: 16px;
+}
+
+.img {
+  height: 300px; 
+  /* width: auto;  */
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-header {
+  color:blue;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #F5F5EB;
+}
+
+.accordion-img {
+  overflow: hidden;
+  /* transition: max-height 50s easy-out; */
+  max-height: 0;
+}
+
+.accordion-item:hover .accordion-img {
+  overflow: visible;
+  max-height: 300px;
+  /* transition: max-height 2s ease-in; */
+}
+
+.accordion-img:visited .accordion-img {
+  overflow: visible;
+  max-height: 300px;
+  /* transition: max-height 0.3s ease-in; */
+}
+
+.accordion-item:hover .accordion-header {
+  color:rgb(0, 0, 0);
+}
+  
+.accordion-item:active .accordion-img {
+  overflow: visible;
+  max-height: 300px;
+  /* transition: max-height 100s ease-in; */
+}
+
+
+
+
