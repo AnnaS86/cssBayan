@@ -1,16 +1,18 @@
 body {
 
   display: flex;
+  justify-content: center;
   flex-direction: column;
   background-color:#F5F5EB;
   cursor: pointer;
   font-family:Arial, Helvetica, sans-serif;
   font-size: 16px;
-  
+
 }
 .main-header {
   font-size: 16px;
-  
+  display: flex;
+  justify-content: center;
 }
 
 .img {
@@ -20,15 +22,22 @@ body {
 }
 
 .accordion {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
+  justify-content: center; */
 }
 
 .accordion-item {
   margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .accordion-header {
+  /* Выровнять по центру */
+  display: flex;
+  justify-content: center;
   color:blue;
   border-bottom: 2px solid grey;
   /* cursor: pointer; */
@@ -37,6 +46,9 @@ body {
 }
 
 .accordion-img {
+  /* Выровнять картинку по центру */
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   /* opacity: 1; */
   max-height: 0;
